@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/singleton_test.dir/singleton_test.cpp.o  -o /media/vincent/DATA/Ubuntu/Project/vlib/bin/DesignPattern/singleton_test -rdynamic ../../DesignPattern/../../lib/libVLib.so -lpthread -Wl,-rpath,/media/vincent/DATA/Ubuntu/Project/vlib/example/DesignPattern/../../lib 

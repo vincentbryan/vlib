@@ -1,0 +1,4 @@
+/media/vincent/DATA/Ubuntu/Software/clion/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /media/vincent/DATA/Ubuntu/Project/vlib
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug

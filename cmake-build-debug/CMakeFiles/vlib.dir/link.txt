@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/vlib.dir/main.cpp.o  -o vlib -lpthread 
