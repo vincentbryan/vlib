@@ -21,6 +21,8 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${BIN_OUTPUT_PATH})
 
 add_executable(singleton_test singleton_test.cpp)
 add_executable(observer_test  observer_test.cpp)
+add_executable(object_pool_test  object_pool_test.cpp)
 
 target_link_libraries(singleton_test Threads::Threads ${VLIB_PATH}/libVLib.so)
 target_link_libraries(observer_test  Threads::Threads ${VLIB_PATH}/libVLib.so)
+target_link_libraries(object_pool_test  Threads::Threads ${VLIB_PATH}/libVLib.so)

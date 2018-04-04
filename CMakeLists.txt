@@ -12,6 +12,6 @@ include_directories(
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(vlib main.cpp include/Thread/Threads.h include/macro.h include/Timer.h include/Thread/SyncQueue.hpp include/vlib.h)
+add_executable(vlib main.cpp include/Thread/Threads.h include/macro.h include/Utils/Timer.h include/Thread/SyncQueue.hpp)
 
 target_link_libraries(vlib Threads::Threads)

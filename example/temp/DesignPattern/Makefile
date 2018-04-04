@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /media/vincent/DATA/Ubuntu/Project/vlib/example/temp
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -126,6 +126,21 @@ observer_test/fast:
 .PHONY : observer_test/fast
 
 # Convenience name for target.
+DesignPattern/CMakeFiles/object_pool_test.dir/rule:
+	cd /media/vincent/DATA/Ubuntu/Project/vlib/example/temp && $(MAKE) -f CMakeFiles/Makefile2 DesignPattern/CMakeFiles/object_pool_test.dir/rule
+.PHONY : DesignPattern/CMakeFiles/object_pool_test.dir/rule
+
+# Convenience name for target.
+object_pool_test: DesignPattern/CMakeFiles/object_pool_test.dir/rule
+
+.PHONY : object_pool_test
+
+# fast build rule for target.
+object_pool_test/fast:
+	cd /media/vincent/DATA/Ubuntu/Project/vlib/example/temp && $(MAKE) -f DesignPattern/CMakeFiles/object_pool_test.dir/build.make DesignPattern/CMakeFiles/object_pool_test.dir/build
+.PHONY : object_pool_test/fast
+
+# Convenience name for target.
 DesignPattern/CMakeFiles/singleton_test.dir/rule:
 	cd /media/vincent/DATA/Ubuntu/Project/vlib/example/temp && $(MAKE) -f CMakeFiles/Makefile2 DesignPattern/CMakeFiles/singleton_test.dir/rule
 .PHONY : DesignPattern/CMakeFiles/singleton_test.dir/rule
@@ -139,6 +154,33 @@ singleton_test: DesignPattern/CMakeFiles/singleton_test.dir/rule
 singleton_test/fast:
 	cd /media/vincent/DATA/Ubuntu/Project/vlib/example/temp && $(MAKE) -f DesignPattern/CMakeFiles/singleton_test.dir/build.make DesignPattern/CMakeFiles/singleton_test.dir/build
 .PHONY : singleton_test/fast
+
+object_pool_test.o: object_pool_test.cpp.o
+
+.PHONY : object_pool_test.o
+
+# target to build an object file
+object_pool_test.cpp.o:
+	cd /media/vincent/DATA/Ubuntu/Project/vlib/example/temp && $(MAKE) -f DesignPattern/CMakeFiles/object_pool_test.dir/build.make DesignPattern/CMakeFiles/object_pool_test.dir/object_pool_test.cpp.o
+.PHONY : object_pool_test.cpp.o
+
+object_pool_test.i: object_pool_test.cpp.i
+
+.PHONY : object_pool_test.i
+
+# target to preprocess a source file
+object_pool_test.cpp.i:
+	cd /media/vincent/DATA/Ubuntu/Project/vlib/example/temp && $(MAKE) -f DesignPattern/CMakeFiles/object_pool_test.dir/build.make DesignPattern/CMakeFiles/object_pool_test.dir/object_pool_test.cpp.i
+.PHONY : object_pool_test.cpp.i
+
+object_pool_test.s: object_pool_test.cpp.s
+
+.PHONY : object_pool_test.s
+
+# target to generate assembly for a file
+object_pool_test.cpp.s:
+	cd /media/vincent/DATA/Ubuntu/Project/vlib/example/temp && $(MAKE) -f DesignPattern/CMakeFiles/object_pool_test.dir/build.make DesignPattern/CMakeFiles/object_pool_test.dir/object_pool_test.cpp.s
+.PHONY : object_pool_test.cpp.s
 
 observer_test.o: observer_test.cpp.o
 
@@ -200,10 +242,14 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... observer_test"
+	@echo "... object_pool_test"
 	@echo "... singleton_test"
+	@echo "... rebuild_cache"
+	@echo "... object_pool_test.o"
+	@echo "... object_pool_test.i"
+	@echo "... object_pool_test.s"
 	@echo "... observer_test.o"
 	@echo "... observer_test.i"
 	@echo "... observer_test.s"

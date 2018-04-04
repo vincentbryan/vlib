@@ -137,6 +137,19 @@ observer_test/fast:
 .PHONY : observer_test/fast
 
 #=============================================================================
+# Target rules for targets named object_pool_test
+
+# Build rule for target.
+object_pool_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 object_pool_test
+.PHONY : object_pool_test
+
+# fast build rule for target.
+object_pool_test/fast:
+	$(MAKE) -f DesignPattern/CMakeFiles/object_pool_test.dir/build.make DesignPattern/CMakeFiles/object_pool_test.dir/build
+.PHONY : object_pool_test/fast
+
+#=============================================================================
 # Target rules for targets named singleton_test
 
 # Build rule for target.
@@ -159,6 +172,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... syncqueue_test"
 	@echo "... observer_test"
+	@echo "... object_pool_test"
 	@echo "... singleton_test"
 .PHONY : help
 

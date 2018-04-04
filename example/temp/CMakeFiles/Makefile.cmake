@@ -126,5 +126,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "Thread/CMakeFiles/syncqueue_test.dir/DependInfo.cmake"
   "DesignPattern/CMakeFiles/observer_test.dir/DependInfo.cmake"
+  "DesignPattern/CMakeFiles/object_pool_test.dir/DependInfo.cmake"
   "DesignPattern/CMakeFiles/singleton_test.dir/DependInfo.cmake"
   )

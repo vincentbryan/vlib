@@ -92,13 +92,10 @@
 		<Unit filename="/media/vincent/DATA/Ubuntu/Project/vlib/include/Thread/Threads.h">
 			<Option target="vlib"/>
 		</Unit>
-		<Unit filename="/media/vincent/DATA/Ubuntu/Project/vlib/include/Timer.h">
+		<Unit filename="/media/vincent/DATA/Ubuntu/Project/vlib/include/Utils/Timer.h">
 			<Option target="vlib"/>
 		</Unit>
 		<Unit filename="/media/vincent/DATA/Ubuntu/Project/vlib/include/macro.h">
-			<Option target="vlib"/>
-		</Unit>
-		<Unit filename="/media/vincent/DATA/Ubuntu/Project/vlib/include/vlib.h">
 			<Option target="vlib"/>
 		</Unit>
 		<Unit filename="/media/vincent/DATA/Ubuntu/Project/vlib/main.cpp">

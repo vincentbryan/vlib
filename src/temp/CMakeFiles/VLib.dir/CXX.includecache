@@ -6,6 +6,8 @@
 
 #IncludeRegexTransform: 
 
+../../include/DesignPattern/ObjectPool.hpp
+
 ../../include/DesignPattern/Observer.hpp
 map
 -
@@ -59,6 +61,8 @@ DesignPattern/Singleton.hpp
 ../../include/DesignPattern/Singleton.hpp
 DesignPattern/Observer.hpp
 ../../include/DesignPattern/Observer.hpp
+DesignPattern/ObjectPool.hpp
+../../include/DesignPattern/ObjectPool.hpp
 
 /media/vincent/DATA/Ubuntu/Project/vlib/main.cpp
 iostream
