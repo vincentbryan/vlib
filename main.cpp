@@ -1,12 +1,15 @@
-#define DEBUG
 #include <iostream>
-#include <vlib>
+#include <Eigen/Dense>
 
-using namespace vlib;
 using namespace std;
+using namespace Eigen;
 
-int main() {
-    string str = "hahah";
-    cout << typeid("hahah").name() << endl;
-    cout << typeid(char*[6]).name() << endl;
+int main(int argc, char ** argv) {
+
+    Vector2d a(1, 2);
+    Vector2d b(3, 4);
+
+    cout << a + b << endl;
+
+    return 0;
 }

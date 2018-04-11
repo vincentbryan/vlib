@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/media/vincent/DATA/Ubuntu/Project/vlib/include 
+CXX_INCLUDES = -I/media/vincent/DATA/Ubuntu/Project/vlib/include -I/media/vincent/DATA/Ubuntu/Project/vlib/3rd/Eigen/include 
 

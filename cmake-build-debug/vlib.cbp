@@ -45,6 +45,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/include"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/3rd/Eigen/include"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -69,6 +70,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/include"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/3rd/Eigen/include"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -86,18 +88,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/media/vincent/DATA/Ubuntu/Project/vlib/include/Thread/SyncQueue.hpp">
-			<Option target="vlib"/>
-		</Unit>
-		<Unit filename="/media/vincent/DATA/Ubuntu/Project/vlib/include/Thread/Threads.h">
-			<Option target="vlib"/>
-		</Unit>
-		<Unit filename="/media/vincent/DATA/Ubuntu/Project/vlib/include/Utils/Timer.h">
-			<Option target="vlib"/>
-		</Unit>
-		<Unit filename="/media/vincent/DATA/Ubuntu/Project/vlib/include/macro.h">
-			<Option target="vlib"/>
-		</Unit>
 		<Unit filename="/media/vincent/DATA/Ubuntu/Project/vlib/main.cpp">
 			<Option target="vlib"/>
 		</Unit>

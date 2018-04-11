@@ -13,6 +13,7 @@ include_directories(
         ${VLIB_ROOT}/include/DesignPattern
         ${VLIB_ROOT}/include/Thread
         ${VLIB_ROOT}/include/Template
+
 )
 
 aux_source_directory(.. VLIB_SRC)
