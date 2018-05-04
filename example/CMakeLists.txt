@@ -3,3 +3,4 @@ project(example)
 
 add_subdirectory(Thread)
 add_subdirectory(DesignPattern)
+add_subdirectory(Utils)

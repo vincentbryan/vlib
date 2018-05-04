@@ -18,3 +18,6 @@ add_executable(vlib main.cpp)
 target_link_libraries(vlib
 		Threads::Threads
 )
+
+add_subdirectory(./src)
+add_subdirectory(./example)
