@@ -60,39 +60,361 @@ CMAKE_SOURCE_DIR = /media/vincent/DATA/Ubuntu/Project/vlib
 CMAKE_BINARY_DIR = /media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/vlib.dir
+# Target rules for target CMakeFiles/main.dir
 
 # All Build rule for target.
-CMakeFiles/vlib.dir/all:
-	$(MAKE) -f CMakeFiles/vlib.dir/build.make CMakeFiles/vlib.dir/depend
-	$(MAKE) -f CMakeFiles/vlib.dir/build.make CMakeFiles/vlib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target vlib"
-.PHONY : CMakeFiles/vlib.dir/all
+CMakeFiles/main.dir/all:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/CMakeFiles --progress-num=4,5 "Built target main"
+.PHONY : CMakeFiles/main.dir/all
 
 # Include target in all.
-all: CMakeFiles/vlib.dir/all
+all: CMakeFiles/main.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/vlib.dir/rule: cmake_check_build_system
+CMakeFiles/main.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/vlib.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/vlib.dir/rule
+.PHONY : CMakeFiles/main.dir/rule
 
 # Convenience name for target.
-vlib: CMakeFiles/vlib.dir/rule
+main: CMakeFiles/main.dir/rule
 
-.PHONY : vlib
-
-# clean rule for target.
-CMakeFiles/vlib.dir/clean:
-	$(MAKE) -f CMakeFiles/vlib.dir/build.make CMakeFiles/vlib.dir/clean
-.PHONY : CMakeFiles/vlib.dir/clean
+.PHONY : main
 
 # clean rule for target.
-clean: CMakeFiles/vlib.dir/clean
+CMakeFiles/main.dir/clean:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/clean
+.PHONY : CMakeFiles/main.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/main.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory src
+
+# Convenience name for "all" pass in the directory.
+src/all: src/CMakeFiles/VLib.dir/all
+
+.PHONY : src/all
+
+# Convenience name for "clean" pass in the directory.
+src/clean: src/CMakeFiles/VLib.dir/clean
+
+.PHONY : src/clean
+
+# Convenience name for "preinstall" pass in the directory.
+src/preinstall:
+
+.PHONY : src/preinstall
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/VLib.dir
+
+# All Build rule for target.
+src/CMakeFiles/VLib.dir/all:
+	$(MAKE) -f src/CMakeFiles/VLib.dir/build.make src/CMakeFiles/VLib.dir/depend
+	$(MAKE) -f src/CMakeFiles/VLib.dir/build.make src/CMakeFiles/VLib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target VLib"
+.PHONY : src/CMakeFiles/VLib.dir/all
+
+# Include target in all.
+all: src/CMakeFiles/VLib.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/VLib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/VLib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/CMakeFiles 0
+.PHONY : src/CMakeFiles/VLib.dir/rule
+
+# Convenience name for target.
+VLib: src/CMakeFiles/VLib.dir/rule
+
+.PHONY : VLib
+
+# clean rule for target.
+src/CMakeFiles/VLib.dir/clean:
+	$(MAKE) -f src/CMakeFiles/VLib.dir/build.make src/CMakeFiles/VLib.dir/clean
+.PHONY : src/CMakeFiles/VLib.dir/clean
+
+# clean rule for target.
+clean: src/CMakeFiles/VLib.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory example
+
+# Convenience name for "all" pass in the directory.
+example/all: example/Thread/all
+example/all: example/DesignPattern/all
+example/all: example/Utils/all
+
+.PHONY : example/all
+
+# Convenience name for "clean" pass in the directory.
+example/clean: example/Thread/clean
+example/clean: example/DesignPattern/clean
+example/clean: example/Utils/clean
+
+.PHONY : example/clean
+
+# Convenience name for "preinstall" pass in the directory.
+example/preinstall: example/Thread/preinstall
+example/preinstall: example/DesignPattern/preinstall
+example/preinstall: example/Utils/preinstall
+
+.PHONY : example/preinstall
+
+#=============================================================================
+# Directory level rules for directory example/Thread
+
+# Convenience name for "all" pass in the directory.
+example/Thread/all: example/Thread/CMakeFiles/syncqueue_test.dir/all
+
+.PHONY : example/Thread/all
+
+# Convenience name for "clean" pass in the directory.
+example/Thread/clean: example/Thread/CMakeFiles/syncqueue_test.dir/clean
+
+.PHONY : example/Thread/clean
+
+# Convenience name for "preinstall" pass in the directory.
+example/Thread/preinstall:
+
+.PHONY : example/Thread/preinstall
+
+#=============================================================================
+# Target rules for target example/Thread/CMakeFiles/syncqueue_test.dir
+
+# All Build rule for target.
+example/Thread/CMakeFiles/syncqueue_test.dir/all:
+	$(MAKE) -f example/Thread/CMakeFiles/syncqueue_test.dir/build.make example/Thread/CMakeFiles/syncqueue_test.dir/depend
+	$(MAKE) -f example/Thread/CMakeFiles/syncqueue_test.dir/build.make example/Thread/CMakeFiles/syncqueue_test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/CMakeFiles --progress-num=14,15 "Built target syncqueue_test"
+.PHONY : example/Thread/CMakeFiles/syncqueue_test.dir/all
+
+# Include target in all.
+all: example/Thread/CMakeFiles/syncqueue_test.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+example/Thread/CMakeFiles/syncqueue_test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 example/Thread/CMakeFiles/syncqueue_test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/CMakeFiles 0
+.PHONY : example/Thread/CMakeFiles/syncqueue_test.dir/rule
+
+# Convenience name for target.
+syncqueue_test: example/Thread/CMakeFiles/syncqueue_test.dir/rule
+
+.PHONY : syncqueue_test
+
+# clean rule for target.
+example/Thread/CMakeFiles/syncqueue_test.dir/clean:
+	$(MAKE) -f example/Thread/CMakeFiles/syncqueue_test.dir/build.make example/Thread/CMakeFiles/syncqueue_test.dir/clean
+.PHONY : example/Thread/CMakeFiles/syncqueue_test.dir/clean
+
+# clean rule for target.
+clean: example/Thread/CMakeFiles/syncqueue_test.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory example/DesignPattern
+
+# Convenience name for "all" pass in the directory.
+example/DesignPattern/all: example/DesignPattern/CMakeFiles/object_pool_test.dir/all
+example/DesignPattern/all: example/DesignPattern/CMakeFiles/observer_test.dir/all
+example/DesignPattern/all: example/DesignPattern/CMakeFiles/singleton_test.dir/all
+
+.PHONY : example/DesignPattern/all
+
+# Convenience name for "clean" pass in the directory.
+example/DesignPattern/clean: example/DesignPattern/CMakeFiles/object_pool_test.dir/clean
+example/DesignPattern/clean: example/DesignPattern/CMakeFiles/observer_test.dir/clean
+example/DesignPattern/clean: example/DesignPattern/CMakeFiles/singleton_test.dir/clean
+
+.PHONY : example/DesignPattern/clean
+
+# Convenience name for "preinstall" pass in the directory.
+example/DesignPattern/preinstall:
+
+.PHONY : example/DesignPattern/preinstall
+
+#=============================================================================
+# Target rules for target example/DesignPattern/CMakeFiles/object_pool_test.dir
+
+# All Build rule for target.
+example/DesignPattern/CMakeFiles/object_pool_test.dir/all:
+	$(MAKE) -f example/DesignPattern/CMakeFiles/object_pool_test.dir/build.make example/DesignPattern/CMakeFiles/object_pool_test.dir/depend
+	$(MAKE) -f example/DesignPattern/CMakeFiles/object_pool_test.dir/build.make example/DesignPattern/CMakeFiles/object_pool_test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/CMakeFiles --progress-num=6,7 "Built target object_pool_test"
+.PHONY : example/DesignPattern/CMakeFiles/object_pool_test.dir/all
+
+# Include target in all.
+all: example/DesignPattern/CMakeFiles/object_pool_test.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+example/DesignPattern/CMakeFiles/object_pool_test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 example/DesignPattern/CMakeFiles/object_pool_test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/CMakeFiles 0
+.PHONY : example/DesignPattern/CMakeFiles/object_pool_test.dir/rule
+
+# Convenience name for target.
+object_pool_test: example/DesignPattern/CMakeFiles/object_pool_test.dir/rule
+
+.PHONY : object_pool_test
+
+# clean rule for target.
+example/DesignPattern/CMakeFiles/object_pool_test.dir/clean:
+	$(MAKE) -f example/DesignPattern/CMakeFiles/object_pool_test.dir/build.make example/DesignPattern/CMakeFiles/object_pool_test.dir/clean
+.PHONY : example/DesignPattern/CMakeFiles/object_pool_test.dir/clean
+
+# clean rule for target.
+clean: example/DesignPattern/CMakeFiles/object_pool_test.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target example/DesignPattern/CMakeFiles/observer_test.dir
+
+# All Build rule for target.
+example/DesignPattern/CMakeFiles/observer_test.dir/all:
+	$(MAKE) -f example/DesignPattern/CMakeFiles/observer_test.dir/build.make example/DesignPattern/CMakeFiles/observer_test.dir/depend
+	$(MAKE) -f example/DesignPattern/CMakeFiles/observer_test.dir/build.make example/DesignPattern/CMakeFiles/observer_test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/CMakeFiles --progress-num=8,9 "Built target observer_test"
+.PHONY : example/DesignPattern/CMakeFiles/observer_test.dir/all
+
+# Include target in all.
+all: example/DesignPattern/CMakeFiles/observer_test.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+example/DesignPattern/CMakeFiles/observer_test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 example/DesignPattern/CMakeFiles/observer_test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/CMakeFiles 0
+.PHONY : example/DesignPattern/CMakeFiles/observer_test.dir/rule
+
+# Convenience name for target.
+observer_test: example/DesignPattern/CMakeFiles/observer_test.dir/rule
+
+.PHONY : observer_test
+
+# clean rule for target.
+example/DesignPattern/CMakeFiles/observer_test.dir/clean:
+	$(MAKE) -f example/DesignPattern/CMakeFiles/observer_test.dir/build.make example/DesignPattern/CMakeFiles/observer_test.dir/clean
+.PHONY : example/DesignPattern/CMakeFiles/observer_test.dir/clean
+
+# clean rule for target.
+clean: example/DesignPattern/CMakeFiles/observer_test.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target example/DesignPattern/CMakeFiles/singleton_test.dir
+
+# All Build rule for target.
+example/DesignPattern/CMakeFiles/singleton_test.dir/all:
+	$(MAKE) -f example/DesignPattern/CMakeFiles/singleton_test.dir/build.make example/DesignPattern/CMakeFiles/singleton_test.dir/depend
+	$(MAKE) -f example/DesignPattern/CMakeFiles/singleton_test.dir/build.make example/DesignPattern/CMakeFiles/singleton_test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/CMakeFiles --progress-num=12,13 "Built target singleton_test"
+.PHONY : example/DesignPattern/CMakeFiles/singleton_test.dir/all
+
+# Include target in all.
+all: example/DesignPattern/CMakeFiles/singleton_test.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+example/DesignPattern/CMakeFiles/singleton_test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 example/DesignPattern/CMakeFiles/singleton_test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/CMakeFiles 0
+.PHONY : example/DesignPattern/CMakeFiles/singleton_test.dir/rule
+
+# Convenience name for target.
+singleton_test: example/DesignPattern/CMakeFiles/singleton_test.dir/rule
+
+.PHONY : singleton_test
+
+# clean rule for target.
+example/DesignPattern/CMakeFiles/singleton_test.dir/clean:
+	$(MAKE) -f example/DesignPattern/CMakeFiles/singleton_test.dir/build.make example/DesignPattern/CMakeFiles/singleton_test.dir/clean
+.PHONY : example/DesignPattern/CMakeFiles/singleton_test.dir/clean
+
+# clean rule for target.
+clean: example/DesignPattern/CMakeFiles/singleton_test.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory example/Utils
+
+# Convenience name for "all" pass in the directory.
+example/Utils/all: example/Utils/CMakeFiles/program_test.dir/all
+
+.PHONY : example/Utils/all
+
+# Convenience name for "clean" pass in the directory.
+example/Utils/clean: example/Utils/CMakeFiles/program_test.dir/clean
+
+.PHONY : example/Utils/clean
+
+# Convenience name for "preinstall" pass in the directory.
+example/Utils/preinstall:
+
+.PHONY : example/Utils/preinstall
+
+#=============================================================================
+# Target rules for target example/Utils/CMakeFiles/program_test.dir
+
+# All Build rule for target.
+example/Utils/CMakeFiles/program_test.dir/all:
+	$(MAKE) -f example/Utils/CMakeFiles/program_test.dir/build.make example/Utils/CMakeFiles/program_test.dir/depend
+	$(MAKE) -f example/Utils/CMakeFiles/program_test.dir/build.make example/Utils/CMakeFiles/program_test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/CMakeFiles --progress-num=10,11 "Built target program_test"
+.PHONY : example/Utils/CMakeFiles/program_test.dir/all
+
+# Include target in all.
+all: example/Utils/CMakeFiles/program_test.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+example/Utils/CMakeFiles/program_test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 example/Utils/CMakeFiles/program_test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/CMakeFiles 0
+.PHONY : example/Utils/CMakeFiles/program_test.dir/rule
+
+# Convenience name for target.
+program_test: example/Utils/CMakeFiles/program_test.dir/rule
+
+.PHONY : program_test
+
+# clean rule for target.
+example/Utils/CMakeFiles/program_test.dir/clean:
+	$(MAKE) -f example/Utils/CMakeFiles/program_test.dir/build.make example/Utils/CMakeFiles/program_test.dir/clean
+.PHONY : example/Utils/CMakeFiles/program_test.dir/clean
+
+# clean rule for target.
+clean: example/Utils/CMakeFiles/program_test.dir/clean
 
 .PHONY : clean
 

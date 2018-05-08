@@ -11,6 +11,11 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.9.6/CMakeCCompiler.cmake"
   "CMakeFiles/3.9.6/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.9.6/CMakeSystem.cmake"
+  "../example/CMakeLists.txt"
+  "../example/DesignPattern/CMakeLists.txt"
+  "../example/Thread/CMakeLists.txt"
+  "../example/Utils/CMakeLists.txt"
+  "../src/CMakeLists.txt"
   "/media/vincent/DATA/Ubuntu/Software/clion/bin/cmake/share/cmake-3.9/Modules/CMakeCInformation.cmake"
   "/media/vincent/DATA/Ubuntu/Software/clion/bin/cmake/share/cmake-3.9/Modules/CMakeCXXInformation.cmake"
   "/media/vincent/DATA/Ubuntu/Software/clion/bin/cmake/share/cmake-3.9/Modules/CMakeCommonLanguageInclude.cmake"
@@ -27,6 +32,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/media/vincent/DATA/Ubuntu/Software/clion/bin/cmake/share/cmake-3.9/Modules/Compiler/GNU-C.cmake"
   "/media/vincent/DATA/Ubuntu/Software/clion/bin/cmake/share/cmake-3.9/Modules/Compiler/GNU-CXX.cmake"
   "/media/vincent/DATA/Ubuntu/Software/clion/bin/cmake/share/cmake-3.9/Modules/Compiler/GNU.cmake"
+  "/media/vincent/DATA/Ubuntu/Software/clion/bin/cmake/share/cmake-3.9/Modules/FindOpenGL.cmake"
   "/media/vincent/DATA/Ubuntu/Software/clion/bin/cmake/share/cmake-3.9/Modules/FindPackageHandleStandardArgs.cmake"
   "/media/vincent/DATA/Ubuntu/Software/clion/bin/cmake/share/cmake-3.9/Modules/FindPackageMessage.cmake"
   "/media/vincent/DATA/Ubuntu/Software/clion/bin/cmake/share/cmake-3.9/Modules/FindThreads.cmake"
@@ -47,9 +53,20 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "example/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "example/Thread/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "example/DesignPattern/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "example/Utils/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/vlib.dir/DependInfo.cmake"
+  "CMakeFiles/main.dir/DependInfo.cmake"
+  "src/CMakeFiles/VLib.dir/DependInfo.cmake"
+  "example/Thread/CMakeFiles/syncqueue_test.dir/DependInfo.cmake"
+  "example/DesignPattern/CMakeFiles/object_pool_test.dir/DependInfo.cmake"
+  "example/DesignPattern/CMakeFiles/observer_test.dir/DependInfo.cmake"
+  "example/DesignPattern/CMakeFiles/singleton_test.dir/DependInfo.cmake"
+  "example/Utils/CMakeFiles/program_test.dir/DependInfo.cmake"
   )

@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/media/vincent/DATA/Ubuntu/Software/clion/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -77,6 +66,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/media/vincent/DATA/Ubuntu/Software/clion/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,17 +111,95 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named vlib
+# Target rules for targets named main
 
 # Build rule for target.
-vlib: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vlib
-.PHONY : vlib
+main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main
+.PHONY : main
 
 # fast build rule for target.
-vlib/fast:
-	$(MAKE) -f CMakeFiles/vlib.dir/build.make CMakeFiles/vlib.dir/build
-.PHONY : vlib/fast
+main/fast:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
+
+#=============================================================================
+# Target rules for targets named VLib
+
+# Build rule for target.
+VLib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 VLib
+.PHONY : VLib
+
+# fast build rule for target.
+VLib/fast:
+	$(MAKE) -f src/CMakeFiles/VLib.dir/build.make src/CMakeFiles/VLib.dir/build
+.PHONY : VLib/fast
+
+#=============================================================================
+# Target rules for targets named syncqueue_test
+
+# Build rule for target.
+syncqueue_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 syncqueue_test
+.PHONY : syncqueue_test
+
+# fast build rule for target.
+syncqueue_test/fast:
+	$(MAKE) -f example/Thread/CMakeFiles/syncqueue_test.dir/build.make example/Thread/CMakeFiles/syncqueue_test.dir/build
+.PHONY : syncqueue_test/fast
+
+#=============================================================================
+# Target rules for targets named object_pool_test
+
+# Build rule for target.
+object_pool_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 object_pool_test
+.PHONY : object_pool_test
+
+# fast build rule for target.
+object_pool_test/fast:
+	$(MAKE) -f example/DesignPattern/CMakeFiles/object_pool_test.dir/build.make example/DesignPattern/CMakeFiles/object_pool_test.dir/build
+.PHONY : object_pool_test/fast
+
+#=============================================================================
+# Target rules for targets named observer_test
+
+# Build rule for target.
+observer_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 observer_test
+.PHONY : observer_test
+
+# fast build rule for target.
+observer_test/fast:
+	$(MAKE) -f example/DesignPattern/CMakeFiles/observer_test.dir/build.make example/DesignPattern/CMakeFiles/observer_test.dir/build
+.PHONY : observer_test/fast
+
+#=============================================================================
+# Target rules for targets named singleton_test
+
+# Build rule for target.
+singleton_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 singleton_test
+.PHONY : singleton_test
+
+# fast build rule for target.
+singleton_test/fast:
+	$(MAKE) -f example/DesignPattern/CMakeFiles/singleton_test.dir/build.make example/DesignPattern/CMakeFiles/singleton_test.dir/build
+.PHONY : singleton_test/fast
+
+#=============================================================================
+# Target rules for targets named program_test
+
+# Build rule for target.
+program_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 program_test
+.PHONY : program_test
+
+# fast build rule for target.
+program_test/fast:
+	$(MAKE) -f example/Utils/CMakeFiles/program_test.dir/build.make example/Utils/CMakeFiles/program_test.dir/build
+.PHONY : program_test/fast
 
 main.o: main.cpp.o
 
@@ -129,7 +207,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/vlib.dir/build.make CMakeFiles/vlib.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -138,7 +216,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/vlib.dir/build.make CMakeFiles/vlib.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -147,7 +225,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/vlib.dir/build.make CMakeFiles/vlib.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -156,9 +234,15 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... vlib"
+	@echo "... edit_cache"
+	@echo "... main"
+	@echo "... VLib"
+	@echo "... syncqueue_test"
+	@echo "... object_pool_test"
+	@echo "... observer_test"
+	@echo "... singleton_test"
+	@echo "... program_test"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

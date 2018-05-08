@@ -137,7 +137,7 @@ namespace vlib{
 
 
     private:
-        list<shared_ptr< thread>> m_threadGroup;
+        list< shared_ptr<thread> > m_threadGroup;
         SyncQueue<Task> m_queue;
         atomic_bool m_running;
         once_flag m_flag;

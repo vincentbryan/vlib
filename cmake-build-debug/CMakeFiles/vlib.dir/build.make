@@ -90,6 +90,9 @@ vlib_EXTERNAL_OBJECTS =
 
 vlib: CMakeFiles/vlib.dir/main.cpp.o
 vlib: CMakeFiles/vlib.dir/build.make
+vlib: /usr/lib/x86_64-linux-gnu/libGLU.so
+vlib: /usr/lib/x86_64-linux-gnu/libGL.so
+vlib: ../3rd/Pangolin/lib/libpangolin.so
 vlib: CMakeFiles/vlib.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable vlib"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/vlib.dir/link.txt --verbose=$(VERBOSE)

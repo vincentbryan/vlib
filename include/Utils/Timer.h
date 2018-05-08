@@ -2,8 +2,10 @@
 // Created by vincent on 18-3-12.
 //
 
-#include <chrono>
+#pragma once
 
+#include <chrono>
+#include <thread>
 using namespace std::chrono;
 
 namespace vlib{
@@ -31,7 +33,7 @@ namespace vlib{
             return Elapsed<nanoseconds>();
         }
 
-        int64_t ElapsedMicro() const {
+        int64_t ElapsedMilli() const {
             return Elapsed<milliseconds>();
         }
 
@@ -47,6 +49,9 @@ namespace vlib{
             return Elapsed<hours>();
         }
 
+        void Sleep(int64_t msec){
+            std::this_thread::sleep_for(std::chrono::milliseconds(msec));
+        }
 
     };
 }

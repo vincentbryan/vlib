@@ -7,6 +7,9 @@
 #include <iostream>
 #include <vector>
 #include <memory>
+#include <atomic>
+#include <cassert>
+#include "Timer.h"
 
 using namespace std;
 
@@ -14,15 +17,26 @@ namespace vlib{
     class Program {
 
     public:
-        explicit Program(){};
 
         static shared_ptr<Program> Instance;
 
-        int main();
-
-        void Set(int argc, char * argv[]);
+        explicit Program(int rate = 25) : mRate(rate){
+            assert(mRate > 0);
+            mFinishFlag = false;
+        };
 
         virtual ~Program(){};
+
+        void SetRate(size_t rate);
+
+        size_t GetRate() const;
+
+        void SetArg(int argc, char * argv[]);
+
+        int main();
+
+        void Finish();
+
 
     protected:
         virtual void OnStart() = 0;
@@ -34,5 +48,12 @@ namespace vlib{
         int argc;
         vector<string> argv;
 
+    private:
+
+        size_t mRate;
+
+        atomic_bool mFinishFlag;
+
+        Timer mTimer;
     };
 }

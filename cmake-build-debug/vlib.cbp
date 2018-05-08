@@ -5,7 +5,7 @@
 		<Option title="vlib"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\src\;CMake Files\example\;CMake Files\example\DesignPattern\;CMake Files\example\Thread\;CMake Files\example\Utils\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug"/>
@@ -44,8 +44,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/include"/>
-					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/3rd/Eigen/include"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/3rd/Pangolin/include"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -69,8 +68,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/include"/>
-					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/3rd/Eigen/include"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/3rd/Pangolin/include"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -87,12 +85,417 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="VLib">
+				<Option output="/media/vincent/DATA/Ubuntu/Project/vlib/lib/libVLib.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/src"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/3rd/Pangolin/include"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/src/../include"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/src/../include/DesignPattern"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/src/../include/Thread"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/src/../include/Template"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/src/../include/Utils"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/src/../include/UI"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 VLib"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="VLib/fast">
+				<Option output="/media/vincent/DATA/Ubuntu/Project/vlib/lib/libVLib.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/src"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/3rd/Pangolin/include"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/src/../include"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/src/../include/DesignPattern"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/src/../include/Thread"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/src/../include/Template"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/src/../include/Utils"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/src/../include/UI"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 VLib/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="syncqueue_test">
+				<Option output="/media/vincent/DATA/Ubuntu/Project/vlib/bin/Thread/syncqueue_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/vincent/DATA/Ubuntu/Project/vlib/example/Thread/../../bin/Thread"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/3rd/Pangolin/include"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/example/Thread/../../include"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/example/Thread/../../include/DesignPattern"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/example/Thread/../../include/Template"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/example/Thread/../../include/Thread"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/example/Thread/Makefile&quot;  VERBOSE=1 syncqueue_test"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/example/Thread/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/example/Thread/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/example/Thread/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="syncqueue_test/fast">
+				<Option output="/media/vincent/DATA/Ubuntu/Project/vlib/bin/Thread/syncqueue_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/vincent/DATA/Ubuntu/Project/vlib/example/Thread/../../bin/Thread"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/3rd/Pangolin/include"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/example/Thread/../../include"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/example/Thread/../../include/DesignPattern"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/example/Thread/../../include/Template"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/example/Thread/../../include/Thread"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/example/Thread/Makefile&quot;  VERBOSE=1 syncqueue_test/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/example/Thread/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/example/Thread/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/example/Thread/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="object_pool_test">
+				<Option output="/media/vincent/DATA/Ubuntu/Project/vlib/bin/DesignPattern/object_pool_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/vincent/DATA/Ubuntu/Project/vlib/example/DesignPattern/../../bin/DesignPattern"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/3rd/Pangolin/include"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/example/DesignPattern/../../include"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/example/DesignPattern/../../include/DesignPattern"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/example/DesignPattern/../../include/Template"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/example/DesignPattern/../../include/Thread"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/example/DesignPattern/Makefile&quot;  VERBOSE=1 object_pool_test"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/example/DesignPattern/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/example/DesignPattern/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/example/DesignPattern/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="object_pool_test/fast">
+				<Option output="/media/vincent/DATA/Ubuntu/Project/vlib/bin/DesignPattern/object_pool_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/vincent/DATA/Ubuntu/Project/vlib/example/DesignPattern/../../bin/DesignPattern"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/3rd/Pangolin/include"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/example/DesignPattern/../../include"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/example/DesignPattern/../../include/DesignPattern"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/example/DesignPattern/../../include/Template"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/example/DesignPattern/../../include/Thread"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/example/DesignPattern/Makefile&quot;  VERBOSE=1 object_pool_test/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/example/DesignPattern/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/example/DesignPattern/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/example/DesignPattern/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="observer_test">
+				<Option output="/media/vincent/DATA/Ubuntu/Project/vlib/bin/DesignPattern/observer_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/vincent/DATA/Ubuntu/Project/vlib/example/DesignPattern/../../bin/DesignPattern"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/3rd/Pangolin/include"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/example/DesignPattern/../../include"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/example/DesignPattern/../../include/DesignPattern"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/example/DesignPattern/../../include/Template"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/example/DesignPattern/../../include/Thread"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/example/DesignPattern/Makefile&quot;  VERBOSE=1 observer_test"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/example/DesignPattern/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/example/DesignPattern/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/example/DesignPattern/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="observer_test/fast">
+				<Option output="/media/vincent/DATA/Ubuntu/Project/vlib/bin/DesignPattern/observer_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/vincent/DATA/Ubuntu/Project/vlib/example/DesignPattern/../../bin/DesignPattern"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/3rd/Pangolin/include"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/example/DesignPattern/../../include"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/example/DesignPattern/../../include/DesignPattern"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/example/DesignPattern/../../include/Template"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/example/DesignPattern/../../include/Thread"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/example/DesignPattern/Makefile&quot;  VERBOSE=1 observer_test/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/example/DesignPattern/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/example/DesignPattern/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/example/DesignPattern/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="singleton_test">
+				<Option output="/media/vincent/DATA/Ubuntu/Project/vlib/bin/DesignPattern/singleton_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/vincent/DATA/Ubuntu/Project/vlib/example/DesignPattern/../../bin/DesignPattern"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/3rd/Pangolin/include"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/example/DesignPattern/../../include"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/example/DesignPattern/../../include/DesignPattern"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/example/DesignPattern/../../include/Template"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/example/DesignPattern/../../include/Thread"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/example/DesignPattern/Makefile&quot;  VERBOSE=1 singleton_test"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/example/DesignPattern/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/example/DesignPattern/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/example/DesignPattern/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="singleton_test/fast">
+				<Option output="/media/vincent/DATA/Ubuntu/Project/vlib/bin/DesignPattern/singleton_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/vincent/DATA/Ubuntu/Project/vlib/example/DesignPattern/../../bin/DesignPattern"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/3rd/Pangolin/include"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/example/DesignPattern/../../include"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/example/DesignPattern/../../include/DesignPattern"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/example/DesignPattern/../../include/Template"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/example/DesignPattern/../../include/Thread"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/example/DesignPattern/Makefile&quot;  VERBOSE=1 singleton_test/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/example/DesignPattern/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/example/DesignPattern/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/example/DesignPattern/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="program_test">
+				<Option output="/media/vincent/DATA/Ubuntu/Project/vlib/bin/DesignPattern/program_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/vincent/DATA/Ubuntu/Project/vlib/example/Utils/../../bin/DesignPattern"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/3rd/Pangolin/include"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/example/Utils/../../include"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/example/Utils/../../include/DesignPattern"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/example/Utils/../../include/Template"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/example/Utils/../../include/Thread"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/example/Utils/../../include/Utils"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/example/Utils/Makefile&quot;  VERBOSE=1 program_test"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/example/Utils/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/example/Utils/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/example/Utils/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="program_test/fast">
+				<Option output="/media/vincent/DATA/Ubuntu/Project/vlib/bin/DesignPattern/program_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/vincent/DATA/Ubuntu/Project/vlib/example/Utils/../../bin/DesignPattern"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/3rd/Pangolin/include"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/example/Utils/../../include"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/example/Utils/../../include/DesignPattern"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/example/Utils/../../include/Template"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/example/Utils/../../include/Thread"/>
+					<Add directory="/media/vincent/DATA/Ubuntu/Project/vlib/example/Utils/../../include/Utils"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/example/Utils/Makefile&quot;  VERBOSE=1 program_test/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/example/Utils/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/example/Utils/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/media/vincent/DATA/Ubuntu/Project/vlib/cmake-build-debug/example/Utils/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
+		<Unit filename="/media/vincent/DATA/Ubuntu/Project/vlib/example/DesignPattern/object_pool_test.cpp">
+			<Option target="object_pool_test"/>
+		</Unit>
+		<Unit filename="/media/vincent/DATA/Ubuntu/Project/vlib/example/DesignPattern/observer_test.cpp">
+			<Option target="observer_test"/>
+		</Unit>
+		<Unit filename="/media/vincent/DATA/Ubuntu/Project/vlib/example/DesignPattern/singleton_test.cpp">
+			<Option target="singleton_test"/>
+		</Unit>
+		<Unit filename="/media/vincent/DATA/Ubuntu/Project/vlib/example/Thread/syncqueue_test.cpp">
+			<Option target="syncqueue_test"/>
+		</Unit>
+		<Unit filename="/media/vincent/DATA/Ubuntu/Project/vlib/example/Utils/program_test.cpp">
+			<Option target="program_test"/>
+		</Unit>
+		<Unit filename="/media/vincent/DATA/Ubuntu/Project/vlib/example/Utils/program_test.h">
+			<Option target="program_test"/>
+		</Unit>
 		<Unit filename="/media/vincent/DATA/Ubuntu/Project/vlib/main.cpp">
 			<Option target="vlib"/>
 		</Unit>
+		<Unit filename="/media/vincent/DATA/Ubuntu/Project/vlib/src/UI/Pangolin.cpp">
+			<Option target="VLib"/>
+		</Unit>
+		<Unit filename="/media/vincent/DATA/Ubuntu/Project/vlib/src/Utils/Program.cpp">
+			<Option target="VLib"/>
+		</Unit>
 		<Unit filename="/media/vincent/DATA/Ubuntu/Project/vlib/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/media/vincent/DATA/Ubuntu/Project/vlib/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\"/>
+		</Unit>
+		<Unit filename="/media/vincent/DATA/Ubuntu/Project/vlib/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\"/>
+		</Unit>
+		<Unit filename="/media/vincent/DATA/Ubuntu/Project/vlib/example/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\example\"/>
+		</Unit>
+		<Unit filename="/media/vincent/DATA/Ubuntu/Project/vlib/example/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\example\"/>
+		</Unit>
+		<Unit filename="/media/vincent/DATA/Ubuntu/Project/vlib/example/DesignPattern/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\example\DesignPattern\"/>
+		</Unit>
+		<Unit filename="/media/vincent/DATA/Ubuntu/Project/vlib/example/DesignPattern/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\example\DesignPattern\"/>
+		</Unit>
+		<Unit filename="/media/vincent/DATA/Ubuntu/Project/vlib/example/DesignPattern/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\example\DesignPattern\"/>
+		</Unit>
+		<Unit filename="/media/vincent/DATA/Ubuntu/Project/vlib/example/Thread/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\example\Thread\"/>
+		</Unit>
+		<Unit filename="/media/vincent/DATA/Ubuntu/Project/vlib/example/Thread/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\example\Thread\"/>
+		</Unit>
+		<Unit filename="/media/vincent/DATA/Ubuntu/Project/vlib/example/Thread/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\example\Thread\"/>
+		</Unit>
+		<Unit filename="/media/vincent/DATA/Ubuntu/Project/vlib/example/Utils/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\example\Utils\"/>
+		</Unit>
+		<Unit filename="/media/vincent/DATA/Ubuntu/Project/vlib/example/Utils/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\example\Utils\"/>
+		</Unit>
+		<Unit filename="/media/vincent/DATA/Ubuntu/Project/vlib/example/Utils/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\example\Utils\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

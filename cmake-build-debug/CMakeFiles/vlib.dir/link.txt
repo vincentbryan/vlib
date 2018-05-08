@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/vlib.dir/main.cpp.o  -o vlib -lpthread 
+/usr/bin/c++  -g   CMakeFiles/vlib.dir/main.cpp.o  -o vlib -Wl,-rpath,/media/vincent/DATA/Ubuntu/Project/vlib/3rd/Pangolin/lib /usr/lib/x86_64-linux-gnu/libGLU.so /usr/lib/x86_64-linux-gnu/libGL.so ../3rd/Pangolin/lib/libpangolin.so -lpthread 

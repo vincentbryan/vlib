@@ -8,11 +8,12 @@ VLIB_PROGRAM(program_test);
 
 
 void program_test::OnStart() {
+    SetRate(1);
     cout << "OnStart" << endl;
 }
 
 void program_test::OnRun() {
-    cout << "OnRun" << endl;
+    cout << "OnRun " << GetRate() << endl;
 }
 
 void program_test::OnFinish() {
