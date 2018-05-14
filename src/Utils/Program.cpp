@@ -12,6 +12,7 @@ shared_ptr<Program>  Program::Instance = nullptr;
 
 
 int Program::main(){
+
     if (Program::Instance == nullptr){
         cerr << "Use VLIB_PROGRAM(__PROGRAM_NAME__)" << endl;
     }
@@ -27,23 +28,7 @@ int Program::main(){
     signal(SIGQUIT, OnFinishHandler);
     signal(SIGKILL, OnFinishHandler);
 
-    Program::Instance->OnStart();
-
-    while (!mFinishFlag){
-
-        mTimer.Reset();
-
-        Program::Instance->OnRun();
-
-        auto sleep_time = long ( 1000.0f / mRate - mTimer.ElapsedMicro());
-
-        if (sleep_time > 0){
-            // milliseconds
-            mTimer.Sleep(sleep_time);
-        }
-    }
-
-    Program::Instance->OnFinish();
+    Program::Instance->Start();
 
     return 0;
 }
@@ -55,18 +40,6 @@ void Program::SetArg(const int argc_, char* argv_ []){
     }
 }
 
-void Program::SetRate(size_t rate){
-    assert(rate > 0);
-    mRate = rate;
-}
-
-size_t Program::GetRate() const {
-    return mRate;
-}
-
-void Program::Finish(){
-    mFinishFlag = true;
-}
 
 int main(int argc, char* argv []){
     Program::Instance->SetArg(argc, argv);

@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/observer_test.dir/observer_test.cpp.o  -o /media/vincent/DATA/Ubuntu/Project/vlib/bin/DesignPattern/observer_test -rdynamic ../../DesignPattern/../../lib/libVLib.so -lpthread -Wl,-rpath,/media/vincent/DATA/Ubuntu/Project/vlib/example/DesignPattern/../../lib 

@@ -1,3 +1,0 @@
-/media/vincent/DATA/Ubuntu/Project/vlib/src/temp/CMakeFiles/edit_cache.dir
-/media/vincent/DATA/Ubuntu/Project/vlib/src/temp/CMakeFiles/rebuild_cache.dir
-/media/vincent/DATA/Ubuntu/Project/vlib/src/temp/CMakeFiles/VLib.dir

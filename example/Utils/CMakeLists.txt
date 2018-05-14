@@ -4,16 +4,10 @@ project(program_test)
 find_package(Threads REQUIRED)
 
 set(VLIB_ROOT ${PROJECT_SOURCE_DIR}/../..)
-set(BIN_OUTPUT_PATH ${VLIB_ROOT}/bin/DesignPattern)
 set(VLIB_PATH ${VLIB_ROOT}/lib)
 
 include_directories(
 		${VLIB_ROOT}/include
-		${VLIB_ROOT}/include/DesignPattern
-		${VLIB_ROOT}/include/Template
-		${VLIB_ROOT}/include/Thread
-		${VLIB_ROOT}/include/Utils
-
 )
 
 

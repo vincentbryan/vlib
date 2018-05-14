@@ -14,12 +14,10 @@ include_directories(
         ${VLIB_ROOT}/include/Thread
         ${VLIB_ROOT}/include/Template
 		${VLIB_ROOT}/include/Utils
-		${VLIB_ROOT}/include/UI
 )
 
 aux_source_directory(Utils/ VLIB_SRC)
 aux_source_directory(UI/ VLIB_SRC)
-
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${BIN_OUTPUT_PATH})
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${LIBRARY_OUTPUT_PATH})

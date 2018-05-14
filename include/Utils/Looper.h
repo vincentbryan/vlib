@@ -3,8 +3,9 @@
 
 #pragma once
 
-#include <stdatomic.h>
 #include <cassert>
+#include <atomic>
+#include <thread>
 #include "Timer.h"
 
 namespace vlib{
@@ -13,15 +14,20 @@ namespace vlib{
     private:
         int mRate;
 
-        atomic_bool mFinishFlag;
+        std::atomic_bool mFinishFlag;
 
         Timer mTimer;
 
+        std::thread* th;
+
     public:
-        Looper(int rate = 25) : mRate(rate){
+        explicit Looper(int rate = 25) : mRate(rate){
             assert(mRate > 0);
             mFinishFlag = false;
+            th = nullptr;
         }
+
+        virtual ~Looper(){};
 
         void SetRate(const int rate);
 
@@ -29,13 +35,19 @@ namespace vlib{
 
         virtual void OnStart() = 0;
 
-        virtual void OnRun() = 0
+        virtual void OnRun() = 0;
 
         virtual void OnFinish() = 0;
 
         void Finish();
 
         void Loop();
+        
+        void Start();
+
+        bool Joinable();
+
+        void Join();
 
     };
 }

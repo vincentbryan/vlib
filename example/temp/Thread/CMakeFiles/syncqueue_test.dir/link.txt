@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/syncqueue_test.dir/syncqueue_test.cpp.o  -o /media/vincent/DATA/Ubuntu/Project/vlib/bin/Thread/syncqueue_test -rdynamic ../../Thread/../../lib/libVLib.so -lpthread -Wl,-rpath,/media/vincent/DATA/Ubuntu/Project/vlib/example/Thread/../../lib 

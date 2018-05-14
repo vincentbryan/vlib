@@ -3,7 +3,7 @@
 //
 
 #pragma once
-
+#define DEBUG
 #define DISABLE_COPY_AND_ASSIGN(CLASS_NAME)\
         (CLASS_NAME)(const (CLASS_NAME));\
         (CLASS_NAME)& operator=(const (CLASS_NAME)&)

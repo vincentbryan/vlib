@@ -39,3 +39,15 @@ void Looper::Loop() {
     OnFinish();
 }
 
+void Looper::Start() {
+    th = new std::thread(&Looper::Loop, this);
+}
+
+bool Looper::Joinable() {
+    return th->joinable();
+}
+
+void Looper::Join() {
+    th->join();
+}
+
